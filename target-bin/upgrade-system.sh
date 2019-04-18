@@ -10,6 +10,6 @@ mkdir -p /var/cache/gitian
 apt-get -q -y purge grub > /dev/null 2>&1 || true
 
 # upgrade packages
-DEBIAN_FRONTEND=noninteractive apt-get -y dist-upgrade > /dev/null > /var/cache/gitian/upgrade.log 2>&1
+#DEBIAN_FRONTEND=noninteractive apt-get -y dist-upgrade > /dev/null > /var/cache/gitian/upgrade.log 2>&1
 
 touch /var/cache/gitian/initial-upgrade
